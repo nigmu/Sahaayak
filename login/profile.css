@@ -1,0 +1,311 @@
+/* Import Font Dancing Script */
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #e8f5ff;
+    font-family: Arial;
+    overflow: hidden;
+}
+
+.heading{
+  text-align: center;
+}
+
+.profile {
+    margin-bottom: 20px;
+    margin-top: -12px;
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px grey;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.job {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.url, hr {
+    text-align: center;
+}
+
+.url hr {
+    margin-left: 20%;
+    width: 60%;
+}
+
+.url a {
+    color: #818181;
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+
+.url a:hover, .url .active {
+    background-color: #e8f5ff;
+    border-radius: 28px;
+    color: #000;
+    margin-left: 14%;
+    width: 65%;
+}
+
+/* End */
+
+/* Main */
+.main {
+    margin-top: 2%;
+    margin-left: 29%;
+    font-size: 28px;
+    padding: 0 10px;
+    width: 58%;
+}
+
+.main h2 {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main .card {
+    background-color: #3F979B;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+}
+
+.main .card table {
+    border: none;
+    font-size: 16px;
+    height: 270px;
+    width: 80%;
+}
+
+.edit {
+    position: absolute;
+    color: #e7e7e8;
+    right: 14%;
+}
+
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ECF2FF;
+}
+
+.uname{
+  color: #DD380D;
+}
+
+#map {
+  position: absolute;
+  left: auto;
+  right: auto;
+  top: 81px;
+  bottom: 0px;
+  width: 90%;
+  z-index: -1;
+}
+
+.btn{
+  padding: 24px;
+  
+}
+
+.help_button {
+  background: #3D94F6;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 24px;
+  border: solid #DD380D 0;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.help_button:hover {
+  background: #D01E37;
+  border: solid #000000 2px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bck-img {
+  background-color: #205E61;
+  background-position: center;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 80%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.nav > a {
+  margin-right: 40px;
+  color: white;
+
+  transition: all 150ms ease-in-out;
+}
+.nav > a:last-child {
+  margin-right: 0;
+}
+
+.nav > a:hover {
+  color: rgb(179, 179, 179);
+}
+
+
+.limg{
+  position: relative;
+  top: -50px;
+}
+
+
+.header-background {
+  backdrop-filter: blur(6px);
+  height: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .header,
+  .header-background {
+    display: none;
+  }
+}
+
+/* mob version  */
+
+
+.mob-open,
+.mob-close {
+  width: 30px;
+  height: 30px;
+  
+}
+
+.mob-open {
+  position: fixed;
+  right: 30px;
+  top: 15px;
+  z-index: 999;
+}
+
+.mob-list {
+  height: 100%;
+  width: 35%;
+  position: fixed;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  z-index: 999;
+  background-color: #205E61;
+}
+
+.mob-list__item {
+  color: white;
+}
+
+.mob-list__item:first-child {
+  margin-bottom: 40px;
+}
+
+.mob-close {
+  position: fixed;
+  right: 30px;
+  top: 15px;
+  z-index: 5;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+/* js */
+
+.opened {
+  opacity: 1;
+  animation: openAnim 200ms ease-in-out;
+}
+
+.close {
+  opacity: 0;
+  animation: closeAnim 200ms ease-in-out;
+}
+
+/* animation  */
+
+@keyframes openAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes closeAnim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
